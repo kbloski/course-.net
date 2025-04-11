@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarWorkshop.Domain.Entities
 {
-    internal class CarWorkshop
+    public class CarWorkshop
     {
         public required int Id { get; set; }
         public string Name { get; set; } = default!;
@@ -22,6 +22,5 @@ namespace CarWorkshop.Domain.Entities
         public void EncodeName() => EncodedName = Name.ToLower().Replace(" ", "-");
 
 
-        
     }
 }
