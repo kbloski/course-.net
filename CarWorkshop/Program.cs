@@ -1,4 +1,5 @@
 using CarWorkshop.Infrastructure.Extenstions;
+using CarWorkshop.Application.Extenstions;
 using CarWorkshop.Infrastructure.Seeders;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,7 @@ builder.Services.AddInfrastructure(builder.Configuration);
 //        builder.Configuration.GetConnectionString("ConnectionStrings"))
 //);
 
+builder.Services.AddApplication();
 
 
 var app = builder.Build();

@@ -1,4 +1,6 @@
-﻿using CarWorkshop.Infrastructure.Presistance;
+﻿using CarWorkshop.Domain.Interfaces;
+using CarWorkshop.Infrastructure.Presistance;
+using CarWorkshop.Infrastructure.Repositories;
 using CarWorkshop.Infrastructure.Seeders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -21,6 +23,7 @@ namespace CarWorkshop.Infrastructure.Extenstions
             );
 
             services.AddScoped<CarWorkshopSeeder>();
+            services.AddScoped<ICarWorkshopRepository, CarWorkshopRepository>();
         }
     }
 }

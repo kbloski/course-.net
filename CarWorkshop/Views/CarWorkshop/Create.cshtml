@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div>
+    Create
+</div>
+
+<div>
+<form action='/CarWorkshop/Create' method="POST">
+    <div>
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" />
+    </div>
+    <div>
+        <label for="Description">Description</label>
+        <input type="text" id="Description" name="Description" />
+    </div>
+
+    <div><strong>Contact Details</strong></div>
+    <div>
+        <label for="ContactDetails.PhoneNumber">ContactDetails.PhoneNumber</label>
+        <input type="text" id="ContactDetails.PhoneNumber" name="ContactDetails.PhoneNumber" />
+    </div>
+    <div>
+        <label for="ContactDetails.City">ContactDetails.City</label>
+        <input type="text" id="ContactDetails.City" name="ContactDetails.City" />
+    </div>
+    <div>
+        <label for="ContactDetails.Street">ContactDetails.Street</label>
+        <input type="text" id="ContactDetails.Street" name="ContactDetails.Street" />
+    </div>
+    <div>
+        <label for="ContactDetails.PostalCode">ContactDetails.PostalCode</label>
+        <input type="text" id="ContactDetails.PostalCode" name="ContactDetails.PostalCode" />
+    </div>
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+</form>
+</div>
